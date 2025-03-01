@@ -1,2 +1,13 @@
 <?xml version = "1.0" encoding = "UTF-8" ?>
-<manifest />
+<manifest>
+  <remote name="homelab"
+          fetch="https://gerrit.k8s.lan/homelab/"
+          review="https://gerrit.k8s.lan/homelab/" />
+
+  <default remote="homelab"
+           revision="main" />
+
+  <project path="iac" name="iac" />
+  <project path="k8s" name="k8s" />
+  <project path="idp" name="idp" />
+</manifest>
