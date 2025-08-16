@@ -1,6 +1,10 @@
 pipeline {
   agent none
 
+  parameters {
+    string(name: "GERRIT_CREDENTIALS_ID", defaultValue: "gerrit")
+  }
+
   stages {
     stage('lint') {
       agent {
